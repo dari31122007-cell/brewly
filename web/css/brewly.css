@@ -91,6 +91,22 @@ img {
     display: flex;
     gap: 32px;
     list-style: none;
+    align-items: center;
+}
+
+.nav-links.active-mobile {
+    display: block;
+    position: absolute;
+    top: 78px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+    gap: 20px;
+ li {
+    padding: 20px;
+ }
 }
 
 .nav-links a {
