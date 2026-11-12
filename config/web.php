@@ -7,20 +7,22 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'ru-RU', 
+    
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
-            // !!! Замени 'key' на случайную длинную строку для безопасности
+           
             'cookieValidationKey' => 'brewly-secret-key-2026-random-string-xyz',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User', // Убедись, что файл называется именно User.php
+            'identityClass' => 'app\models\User', 
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
@@ -28,7 +30,7 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
-            'useFileTransport' => true, // Оставляем true для локальной разработки
+            'useFileTransport' => true, 
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -45,7 +47,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                // Главные страницы сайта
+               
                 '' => 'site/index',
                 'recipes' => 'site/recipes',
                 'recipe/<id:\d+>' => 'site/recipe',
@@ -53,7 +55,7 @@ $config = [
                 'login' => 'site/login',
                 'logout' => 'site/logout',
                 
-                // Если будешь использовать CRUD контроллеры для админки
+                
                 'categories' => 'category/index',
                 'tags' => 'tag/index',
                 'favorites' => 'favorite/index',

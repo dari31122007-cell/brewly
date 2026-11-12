@@ -30291,3 +30291,642 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2026-11-12 11:50:34 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][error][Error] Error: Class "yii\bootstrap5\ActiveForm" not found in C:\OpenServer\domains\natya\views\site\signup.php:17
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\OpenServer\domains\natya\controllers\SiteController.php(196): yii\base\Controller->render()
+#5 [internal function]: app\controllers\SiteController->actionSignup()
+#6 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-11-12 11:50:34 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f\";}'
+    'PHPSESSID' => 'hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => '_csrf=5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f%22%3B%7D; PHPSESSID=hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '63838'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794473434.1043
+    'REQUEST_TIME' => 1794473434
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 11:51:50 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][error][Error] Error: Class "yii\bootstrap5\ActiveForm" not found in C:\OpenServer\domains\natya\views\site\login.php:80
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\OpenServer\domains\natya\controllers\SiteController.php(156): yii\base\Controller->render()
+#5 [internal function]: app\controllers\SiteController->actionLogin()
+#6 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-11-12 11:51:50 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f\";}'
+    'PHPSESSID' => 'hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/recipes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => '_csrf=5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f%22%3B%7D; PHPSESSID=hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '63837'
+    'REDIRECT_URL' => '/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794473510.417
+    'REQUEST_TIME' => 1794473510
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 11:52:02 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][error][Error] Error: Class "yii\bootstrap5\ActiveForm" not found in C:\OpenServer\domains\natya\views\site\login.php:80
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\OpenServer\domains\natya\controllers\SiteController.php(156): yii\base\Controller->render()
+#5 [internal function]: app\controllers\SiteController->actionLogin()
+#6 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-11-12 11:52:02 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f\";}'
+    'PHPSESSID' => 'hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/recipes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => '_csrf=5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f%22%3B%7D; PHPSESSID=hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '63885'
+    'REDIRECT_URL' => '/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794473522.5781
+    'REQUEST_TIME' => 1794473522
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 11:52:04 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][error][Error] Error: Class "yii\bootstrap5\ActiveForm" not found in C:\OpenServer\domains\natya\views\site\login.php:80
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#2 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#3 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#4 C:\OpenServer\domains\natya\controllers\SiteController.php(156): yii\base\Controller->render()
+#5 [internal function]: app\controllers\SiteController->actionLogin()
+#6 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#7 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#8 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#9 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#10 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#11 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2026-11-12 11:52:04 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f\";}'
+    'PHPSESSID' => 'hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/recipes'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => '_csrf=5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f%22%3B%7D; PHPSESSID=hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '63886'
+    'REDIRECT_URL' => '/web/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794473524.6707
+    'REQUEST_TIME' => 1794473524
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 11:53:00 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][error][yii\base\UnknownMethodException] yii\base\UnknownMethodException: Calling unknown method: app\models\SignupForm::hasAttribute() in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Component.php:300
+Stack trace:
+#0 C:\OpenServer\domains\natya\views\site\signup.php(100): yii\base\Component->__call()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(347): require('C:\\OpenServer\\d...')
+#2 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile()
+#3 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile()
+#4 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render()
+#5 C:\OpenServer\domains\natya\controllers\SiteController.php(196): yii\base\Controller->render()
+#6 [internal function]: app\controllers\SiteController->actionSignup()
+#7 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#8 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction()
+#10 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#11 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#12 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2026-11-12 11:53:00 [127.0.0.1][-][hlc7f22gqusjvcd6kl9nmqo33hui8m1v][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f\";}'
+    'PHPSESSID' => 'hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => '_csrf=5993de1e90dacc271279282f3052cb15e562f83cf7843cddf61bf3dbe61e877ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kC5Xpq5mx3umdlv7SvhOrQbse_DmIs_f%22%3B%7D; PHPSESSID=hlc7f22gqusjvcd6kl9nmqo33hui8m1v'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '63887'
+    'REDIRECT_URL' => '/web/site/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/site/signup'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794473580.5367
+    'REQUEST_TIME' => 1794473580
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 12:03:47 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/default-coffee.jpg". in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-11-12 12:03:47 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'snub6o9bkuuu90up9d8tq3gee4crbnbg'
+    '_identity' => '65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9\",2592000]\";}'
+    '_csrf' => 'e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 5
+    '__authKey' => 'aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9'
+    'success' => 'Рецепт успешно добавлен!'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/site/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=snub6o9bkuuu90up9d8tq3gee4crbnbg; _identity=65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9%22%2C2592000%5D%22%3B%7D; _csrf=e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '64079'
+    'REDIRECT_URL' => '/web/images/default-coffee.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/default-coffee.jpg'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794474227.4242
+    'REQUEST_TIME' => 1794474227
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 12:03:50 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/default-coffee.jpg". in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-11-12 12:03:50 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'snub6o9bkuuu90up9d8tq3gee4crbnbg'
+    '_identity' => '65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9\",2592000]\";}'
+    '_csrf' => 'e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 5
+    '__authKey' => 'aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9'
+    'success' => 'Добавлено в избранное! ❤️'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/site/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=snub6o9bkuuu90up9d8tq3gee4crbnbg; _identity=65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9%22%2C2592000%5D%22%3B%7D; _csrf=e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '64066'
+    'REDIRECT_URL' => '/web/images/default-coffee.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/default-coffee.jpg'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794474230.19
+    'REQUEST_TIME' => 1794474230
+    'argv' => []
+    'argc' => 0
+]
+2026-11-12 12:04:00 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/default-coffee.jpg". in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction()
+#1 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#2 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OpenServer\domains\natya\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OpenServer\domains\natya\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest()
+#1 C:\OpenServer\domains\natya\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2026-11-12 12:04:00 [127.0.0.1][5][snub6o9bkuuu90up9d8tq3gee4crbnbg][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'snub6o9bkuuu90up9d8tq3gee4crbnbg'
+    '_identity' => '65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[5,\"aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9\",2592000]\";}'
+    '_csrf' => 'e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq\";}'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__id' => 5
+    '__authKey' => 'aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9'
+    'success' => 'Рецепт успешно обновлен!'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0'
+    'HTTP_SEC_CH_UA' => '\"Not-A.Brand\";v=\"99\", \"Microsoft Edge\";v=\"157\", \"Chromium\";v=\"157\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_REFERER' => 'http://127.0.0.1/web/site/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7'
+    'HTTP_COOKIE' => 'PHPSESSID=snub6o9bkuuu90up9d8tq3gee4crbnbg; _identity=65c16b7a30c7909bbc879f86ab6cf18967647970abb0001428fcf30c2868bfdca%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22aCSdJtvApxPkZVnHlcbaDuMj9_spVFD9%22%2C2592000%5D%22%3B%7D; _csrf=e3636121c86517f70b9a865a9b212f7dd1368ac6971641055c73e1d96c7d1257a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228Wn6d-0lrQHgZ1v_fXYQhIEI09eu2lKq%22%3B%7D'
+    'PATH' => 'c:\\openserver\\modules\\php\\PHP_8.0\\ext;c:\\openserver\\modules\\php\\PHP_8.0\\pear;c:\\openserver\\modules\\php\\PHP_8.0\\pear\\bin;c:\\openserver\\modules\\php\\PHP_8.0;c:\\openserver\\modules\\wget\\bin;c:\\openserver\\modules\\database\\MySQL-8.0\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\bin;c:\\openserver\\modules\\database\\PostgreSQL-9.5\\lib;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0\\bin;c:\\openserver\\modules\\http\\Apache_2.4-PHP_8.0;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OpenServer/domains/natya'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OpenServer/domains/natya/web/index.php'
+    'REMOTE_PORT' => '64078'
+    'REDIRECT_URL' => '/web/images/default-coffee.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/web/images/default-coffee.jpg'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1794474240.93
+    'REQUEST_TIME' => 1794474240
+    'argv' => []
+    'argc' => 0
+]
