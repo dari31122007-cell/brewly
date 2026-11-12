@@ -1,0 +1,1012 @@
+/* =========================================
+   BREWLY.CSS — Стили для проекта Brewly
+   ========================================= */
+
+/* 1. Базовые настройки и переменные */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #F5F1EA;       /* Основной фон (бежевый) */
+    --card: #fff;        /* Фон карточек/белый */
+    --text: #2B1D14;     /* Основной текст (темно-коричневый) */
+    --muted: #6B5D52;    /* Второстепенный текст (серо-коричневый) */
+    --accent: #C65D3C;   /* Акцентный цвет (терракотовый/оранжевый) */
+    --accent-h: #A84A2E; /* Цвет акцента при наведении */
+    --border: #E5DDD0;   /* Цвет границ */
+    --gold: #E8B04B;     /* Золотой цвет (для избранного) */
+    --radius: 12px;      /* Радиус скругления углов */
+    --shadow: 0 4px 20px rgba(43, 29, 20, .06); /* Тень элементов */
+    --filter-accent: #d4a373; /* Цвет для элементов фильтра (кофейный) */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.6rem, 3.5vw, 2.5rem); }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. Шапка сайта (Header & Nav) */
+.header {
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-weight: 500;
+    font-size: .95rem;
+    transition: color .2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fav-btn {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--text);
+    transition: transform .2s;
+}
+
+.fav-btn:hover {
+    transform: scale(1.1);
+}
+
+.fav-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent);
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+}
+
+/* 3. Кнопки (Buttons) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .95rem;
+    cursor: pointer;
+    border: none;
+    transition: all .2s;
+    font-family: inherit;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--accent-h);
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--border);
+}
+
+.btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--accent);
+    padding: 8px 0;
+}
+
+/* 4. Главная страница (Hero & Sections) */
+.hero {
+    padding: 80px 0 60px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-text .tag {
+    display: inline-block;
+    background: rgba(198, 93, 60, .1);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    max-width: 480px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-img {
+    position: relative;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--card);
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hero-badge .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.hero-badge .lbl {
+    font-size: .85rem;
+    color: var(--muted);
+    line-height: 1.3;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.section-head p {
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+/* Категории */
+.cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.cat-card {
+    background: var(--card);
+    padding: 28px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+    transition: all .3s;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.cat-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+}
+
+.cat-icon svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    stroke: var(--text);
+}
+
+.cat-card h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cat-card span {
+    font-size: .85rem;
+    color: var(--muted);
+}
+
+/* Карточки рецептов (Grid) */
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.recipe-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all .3s;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    display: block;
+}
+
+.recipe-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(43, 29, 20, .1);
+}
+
+.card-img {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.recipe-card:hover .card-img img {
+    transform: scale(1.05);
+}
+
+.card-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255, 255, 255, .95);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.card-fav {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, .95);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    transition: all .2s;
+}
+
+.card-fav:hover {
+    color: var(--accent);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.card-meta {
+    display: flex;
+    gap: 16px;
+    color: var(--muted);
+    font-size: .85rem;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.card-meta svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+}
+
+.card-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.tag-pill {
+    background: var(--bg);
+    color: var(--muted);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+/* 5. Страница списка рецептов (Filters & Layout) - ПОЛНОСТЬЮ ПЕРЕРАБОТАНО */
+.list-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 32px;
+    padding: 40px 0;
+}
+
+/* Панель фильтров */
+.filters {
+    background: var(--card);
+    padding: 24px;
+    border-radius: var(--radius);
+    height: fit-content;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 20px;
+}
+
+.filters h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.filter-group {
+    margin-bottom: 28px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+/* Чипсы (Категории) */
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.chip {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1;
+}
+
+.chip:hover {
+    border-color: var(--accent);
+    background: #fff;
+    transform: translateY(-1px);
+}
+
+.chip.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px rgba(198, 93, 60, 0.3);
+}
+
+/* Ползунки (Range Sliders) - НОВАЯ СТРУКТУРА */
+.slider-wrap {
+    position: relative;
+    margin: 15px 0;
+}
+
+.range-input-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+input[type=range].range-input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Дорожка ползунка */
+input[type=range].range-input::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+}
+
+input[type=range].range-input::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+}
+
+/* Бегунок */
+input[type=range].range-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    margin-top: -7px;
+}
+
+input[type=range].range-input::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    background: var(--accent-h);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+input[type=range].range-input::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: var(--accent);
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+input[type=range].range-input::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    background: var(--accent-h);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+/* Числовое значение */
+.range-value {
+    font-weight: 700;
+    color: var(--accent);
+    min-width: 24px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Подписи под ползунком */
+.slider-val {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* Кнопки действий */
+.filter-actions {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-actions .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.filter-actions .btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+}
+
+.filter-actions .btn-primary:hover {
+    background: var(--accent-h);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(198, 93, 60, 0.3);
+}
+
+.filter-actions .btn-secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--border);
+}
+
+.filter-actions .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: #fff;
+}
+
+/* 6. Детальная страница рецепта (Detail View) */
+.detail {
+    padding: 40px 0;
+}
+
+.breadcrumb {
+    color: var(--muted);
+    font-size: .9rem;
+    margin-bottom: 16px;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.detail-img {
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    box-shadow: var(--shadow);
+}
+
+.detail-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-content h1 {
+    margin-bottom: 16px;
+}
+
+.detail-meta {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.detail-meta div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: .95rem;
+}
+
+.desc {
+    color: var(--muted);
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.fav-big {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    background: var(--card);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .2s;
+    font-family: inherit;
+}
+
+.fav-big:hover {
+    border-color: var(--gold);
+    background: var(--gold);
+    color: #fff;
+}
+
+.profile-bars {
+    margin-bottom: 32px;
+}
+
+.profile-bar {
+    display: grid;
+    grid-template-columns: 120px 1fr 50px;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: .9rem;
+}
+
+.bar {
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+}
+
+.ingredients, .steps {
+    margin-bottom: 32px;
+}
+
+.ingredients h3, .steps h3 {
+    margin-bottom: 16px;
+}
+
+.ing-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.ing-list li {
+    background: var(--card);
+    padding: 14px 18px;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+}
+
+.ing-list li span:last-child {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.steps ol {
+    list-style: none;
+    counter-reset: step;
+}
+
+.steps li {
+    counter-increment: step;
+    padding: 16px 16px 16px 56px;
+    position: relative;
+    background: var(--card);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    width: 28px;
+    height: 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+/* 7. Форма добавления рецепта (Form Page) */
+.form-page {
+    padding: 40px 0;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.form-page h1 {
+    margin-bottom: 8px;
+}
+
+.form-page > p {
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+.form-card {
+    background: var(--card);
+    padding: 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+.field label {
+    display: block;
+    font-size: .85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: .95rem;
+    background: var(--bg);
+    transition: border-color .2s;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* 8. Футер (Footer) */
+.footer {
+    background: var(--text);
+    color: #d4c9bc;
+    padding: 48px 0 24px;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 32px;
+}
+
+.footer h4 {
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+.footer a {
+    display: block;
+    padding: 4px 0;
+    transition: color .2s;
+}
+
+.footer a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 20px;
+    text-align: center;
+    font-size: .85rem;
+}
+
+/* 9. Адаптивность (Media Queries) */
+@media (max-width: 1199px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .hero-img {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .list-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .filters {
+        position: static; /* Убираем липкость на мобильных */
+        margin-bottom: 20px;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .hero {
+        padding: 40px 0;
+    }
+    
+    .section {
+        padding: 40px 0;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recipes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-card {
+        padding: 20px;
+    }
+    
+    .profile-bar {
+        grid-template-columns: 100px 1fr 40px;
+        font-size: .8rem;
+    }
+}
